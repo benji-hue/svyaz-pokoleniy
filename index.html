@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Связь поколений: мы помним</title>
+  <meta name="description" content="Красная нить памяти: от подвига белорусских женщин в годы Великой Отечественной войны до Года белорусской женщины — 2026.">
+  <meta name="theme-color" content="#e8e6dd">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3 3l10 10M13 3L3 13' stroke='%23a8142a' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preload" href="fonts/literata-cyrillic-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <a class="skip" href="#main">Перейти к содержанию</a>
+
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#top" aria-label="В начало">
+      <canvas class="mini-motif" data-motif="ruzha" data-color="#a8142a" width="52" height="52" aria-hidden="true"></canvas>
+      <span>Памятаем</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">
+      <span class="sr-only">Меню</span>
+      <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18" stroke="currentColor" stroke-width="2"/></svg>
+    </button>
+    <ul class="nav" id="nav">
+      <li><a href="#nit">Нить</a></li>
+      <li><a href="#hronika">1941–1945</a></li>
+      <li><a href="#khatyn">Хатынь</a></li>
+      <li><a href="#geroini">Героини</a></li>
+      <li><a href="#god">Год женщины</a></li>
+      <li><a href="#vyshyvka">Вышивка</a></li>
+      <li><a href="#stena">Стена памяти</a></li>
+    </ul>
+  </header>
+
+  <svg class="thread" id="thread" aria-hidden="true">
+    <path class="thread-shadow" />
+    <path class="thread-main" />
+    <defs><clipPath id="threadClip" clipPathUnits="userSpaceOnUse"><rect x="0" y="0" width="0" height="0" /></clipPath></defs>
+    <path class="thread-twist" clip-path="url(#threadClip)" />
+    <circle class="thread-needle" r="4" />
+  </svg>
+
+  <main id="main">
+
+    <!-- 1. Первый экран -->
+    <section class="section hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-inner wrap">
+        <canvas class="hero-stitch" id="heroStitch" aria-hidden="true" data-knot="0"></canvas>
+        <h1 id="hero-title">
+          <span class="line"><span>Связь поколений:</span></span>
+          <span class="line line--second"><span>мы помним</span></span>
+        </h1>
+      </div>
+      <div class="hero-foot wrap">
+        <p>Белорусская вышивка — это код, который бабушки передавали внучкам. Так и память: она держится, пока кто-то продолжает нить.</p>
+        <span class="scroll-cue" aria-hidden="true">
+          <svg viewBox="0 0 14 40"><line x1="7" y1="0" x2="7" y2="40" stroke="#cfcbbd" stroke-width="2"/><circle class="drop" cx="7" cy="12" r="4" fill="#a8142a"/></svg>
+          Листайте вниз
+        </span>
+      </div>
+    </section>
+
+    <!-- 2. Нить: три поколения -->
+    <section class="section" id="nit" aria-labelledby="nit-title">
+      <div class="wrap">
+        <p class="kicker" data-knot><svg class="knot" viewBox="0 0 12 12"><path d="M1 1l10 10M11 1L1 11" stroke="#a8142a" stroke-width="2.4"/></svg>Нить</p>
+        <div class="intro-grid">
+          <h2 id="nit-title" class="reveal">В каждом рушнике есть узор, который начала вышивать прабабушка</h2>
+          <div class="reveal">
+            <p class="lead">Белорусский рушник никогда не вышивали за один вечер. Его начинала мать, продолжала дочь, заканчивала внучка. Красная нить переходила из рук в руки — и вместе с ней переходили знаки: оберег для дома, дерево рода, солнце над полем.</p>
+            <p>Память о войне устроена так же. Её начали те, кто выстоял. Её сохранили те, кто восстановил страну из пепла. Теперь нить в наших руках, и только от нас зависит, оборвётся она или пойдёт дальше.</p>
+          </div>
+        </div>
+
+        <ol class="gens">
+          <li class="gen reveal">
+            <canvas data-motif="bereginya" data-color="#a8142a" width="144" height="144" aria-hidden="true"></canvas>
+            <span class="gen-years">1941–1945</span>
+            <h3>Прабабушки <em>выстояли</em></h3>
+            <p>Уходили в партизаны, связными носили донесения через посты, прятали раненых, растили детей в землянках. Без них не было бы Победы.</p>
+          </li>
+          <li class="gen reveal">
+            <canvas data-motif="tree" data-color="#36603a" width="144" height="144" aria-hidden="true"></canvas>
+            <span class="gen-years">1945–1991</span>
+            <h3>Бабушки <em>восстановили</em></h3>
+            <p>Поднимали из руин Минск и сотни городов, разбирали завалы, пахали на коровах, строили заводы. Беларусь заново стала домом.</p>
+          </li>
+          <li class="gen reveal">
+            <canvas data-motif="ruzha" data-color="#22262b" width="144" height="144" aria-hidden="true"></canvas>
+            <span class="gen-years">Сегодня</span>
+            <h3>Мы <em>помним</em></h3>
+            <p>Записываем рассказы родных, находим имена в архивах, приходим к обелискам. Помнить — значит знать имена, а не только даты.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 3. Каждый третий -->
+    <section class="section third" id="tretiy" aria-labelledby="third-title">
+      <div class="wrap">
+        <p class="kicker" data-knot><svg class="knot" viewBox="0 0 12 12"><path d="M1 1l10 10M11 1L1 11" stroke="#a8142a" stroke-width="2.4"/></svg>Цена Победы</p>
+        <h2 id="third-title" class="reveal">Из каждых трёх жителей Беларуси войну не пережил один</h2>
+        <div class="third-figures" id="thirdFigures" role="img" aria-label="Тридцать фигур, каждая третья исчезает"></div>
+        <div class="third-caption reveal">
+          <strong>1 из 3</strong>
+          <p class="muted">Так сегодня оценивают потери белорусского народа в Великой Отечественной войне. За каждой исчезнувшей фигурой — человек, у которого были имя, семья и вышитый матерью рушник.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Хроника -->
+    <section class="section chron" id="hronika" aria-labelledby="chron-title">
+      <div class="chron-head">
+        <div class="wrap">
+          <div>
+            <p class="kicker" data-knot><svg class="knot" viewBox="0 0 12 12"><path d="M1 1l10 10M11 1L1 11" stroke="#a8142a" stroke-width="2.4"/></svg>Хроника</p>
+            <h2 id="chron-title">Тысяча сто дней и ночей</h2>
+          </div>
+          <p class="chron-hint">Беларусь первой приняла удар и почти три года жила в оккупации.</p>
+        </div>
+      </div>
+      <div class="chron-pin" id="chronPin">
+        <div class="chron-rail" aria-hidden="true"><span class="chron-progress"></span></div>
+        <ol class="chron-track" id="chronTrack">
+          <li class="event event--key">
+            <time class="event-date" datetime="1941-06-22">22 июня 1941</time>
+            <svg class="event-mark" viewBox="0 0 30 30" aria-hidden="true"><path d="M5 5l20 20M25 5L5 25" stroke="#a8142a" stroke-width="5"/></svg>
+            <h3>Брестская крепость</h3>
+            <p>На рассвете началась война. Гарнизон крепости сражался в окружении неделями, когда фронт ушёл далеко на восток.</p>
+          </li>
+          <li class="event">
+            <time class="event-date" datetime="1941">1941–1944</time>
+            <svg class="event-mark" viewBox="0 0 30 30" aria-hidden="true"><path d="M5 5l20 20M25 5L5 25" stroke="#22262b" stroke-width="5"/></svg>
+            <h3>Партизанская республика</h3>
+            <p>В лесах действовали сотни отрядов: по официальным данным, 374 тысячи партизан и более 70 тысяч подпольщиков. Связными и разведчицами чаще всего были женщины.</p>
+          </li>
+          <li class="event event--key">
+            <time class="event-date" datetime="1943-03-22">22 марта 1943</time>
+            <svg class="event-mark" viewBox="0 0 30 30" aria-hidden="true"><path d="M5 5l20 20M25 5L5 25" stroke="#a8142a" stroke-width="5"/></svg>
+            <h3>Хатынь</h3>
+            <p>Каратели согнали жителей деревни в сарай и подожгли. Хатынь стала символом сотен белорусских деревень, сожжённых вместе с людьми.</p>
+          </li>
+          <li class="event">
+            <time class="event-date" datetime="1943-09-22">22 сентября 1943</time>
+            <svg class="event-mark" viewBox="0 0 30 30" aria-hidden="true"><path d="M5 5l20 20M25 5L5 25" stroke="#22262b" stroke-width="5"/></svg>
+            <h3>Приговор гауляйтеру</h3>
+            <p>Подпольщицы Елена Мазаник, Мария Осипова и Надежда Троян уничтожили Вильгельма Кубе, наместника оккупированной Беларуси.</p>
+          </li>
+          <li class="event">
+            <time class="event-date" datetime="1944-06-23">23 июня 1944</time>
+            <svg class="event-mark" viewBox="0 0 30 30" aria-hidden="true"><path d="M5 5l20 20M25 5L5 25" stroke="#22262b" stroke-width="5"/></svg>
+            <h3>Операция «Багратион»</h3>
+            <p>Началось наступление, которое за два месяца освободило Беларусь. Накануне партизаны парализовали железные дороги в тылу врага.</p>
+          </li>
+          <li class="event event--key">
+            <time class="event-date" datetime="1944-07-03">3 июля 1944</time>
+            <svg class="event-mark" viewBox="0 0 30 30" aria-hidden="true"><path d="M5 5l20 20M25 5L5 25" stroke="#a8142a" stroke-width="5"/></svg>
+            <h3>Минск свободен</h3>
+            <p>День освобождения столицы стал главным праздником страны — Днём Независимости Республики Беларусь.</p>
+          </li>
+          <li class="event">
+            <time class="event-date" datetime="1945-05-09">9 мая 1945</time>
+            <svg class="event-mark" viewBox="0 0 30 30" aria-hidden="true"><path d="M5 5l20 20M25 5L5 25" stroke="#36603a" stroke-width="5"/></svg>
+            <h3>Победа</h3>
+            <p>Война закончилась. Впереди были годы, когда женщины Беларуси поднимали страну из руин.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 5. Хатынь -->
+    <section class="section khatyn" id="khatyn" aria-labelledby="khatyn-title" data-dark>
+      <div class="wrap khatyn-grid">
+        <div>
+          <p class="kicker" data-knot><svg class="knot" viewBox="0 0 12 12"><path d="M1 1l10 10M11 1L1 11" stroke="#c92a3f" stroke-width="2.4"/></svg>Хатынь, 22 марта 1943</p>
+          <h2 id="khatyn-title">149 крестиков</h2>
+          <p class="lead" style="margin-top:24px">Столько жителей Хатыни погибло в тот день. Семьдесят пять из них были детьми младше шестнадцати лет.</p>
+          <p class="muted">Каждый крестик на этой канве — один человек. Сегодня на месте деревни стоит мемориал, а рядом с ним — единственное в мире кладбище деревень: 185 символических могил тех сёл, что сожгли вместе с жителями и которые так и не возродились.</p>
+          <div class="bell" id="bell" aria-live="off">
+            <span class="bell-ring"><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M22 10c-5 0-8 4-8 9v7l-3 4h22l-3-4v-7c0-5-3-9-8-9zM19 33a3 3 0 006 0" fill="none" stroke="#d3cfc5" stroke-width="1.6"/></svg></span>
+            <span>Колокола Хатыни звонят каждые 30 секунд.<br>Следующий удар через <span class="bell-count" id="bellCount">30</span> с.</span>
+          </div>
+        </div>
+        <div>
+          <canvas class="khatyn-crosses" id="khatynCanvas" role="img" aria-label="149 вышитых крестиков: 74 светлых — взрослые, 75 красных — дети"></canvas>
+          <div class="khatyn-legend">
+            <span><i class="lg-adult"></i>Взрослые — 74</span>
+            <span><i class="lg-child"></i>Дети — 75</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Героини -->
+    <section class="section" id="geroini" aria-labelledby="her-title">
+      <div class="wrap">
+        <p class="kicker" data-knot><svg class="knot" viewBox="0 0 12 12"><path d="M1 1l10 10M11 1L1 11" stroke="#a8142a" stroke-width="2.4"/></svg>Героини</p>
+        <h2 id="her-title" class="reveal">Им было от семнадцати до сорока. Мы знаем их имена</h2>
+        <p class="lead reveal" style="margin-top:24px">Тысячи белорусских женщин ушли в партизаны и подполье. Нажмите на имя, чтобы прочитать историю.</p>
+
+        <ul class="heroines-list" id="heroines">
+          <li class="heroine">
+            <button class="heroine-btn" aria-expanded="false" aria-controls="h1">
+              <canvas data-letter="ВХ" width="128" height="128" aria-hidden="true"></canvas>
+              <span class="heroine-name">Вера Хоружая</span>
+              <span class="heroine-role">1903–1942, Бобруйск и Витебск</span>
+              <span class="heroine-toggle" aria-hidden="true"></span>
+            </button>
+            <div class="heroine-body" id="h1"><div class="heroine-body-inner">
+              <span></span>
+              <p>Родилась в Бобруйске. Ещё до войны прошла через тюрьмы за подпольную работу в Западной Беларуси. В 1941 году ушла в партизанский отряд, а в 1942-м добровольно отправилась в оккупированный Витебск, чтобы возглавить подпольную группу. Группу выследили, Вера Хоружая погибла в застенках гестапо.</p>
+              <p class="heroine-fact">Герой Советского Союза посмертно, 1960 год. Её именем названы улицы в Минске, Витебске и Бобруйске.</p>
+            </div></div>
+          </li>
+          <li class="heroine">
+            <button class="heroine-btn" aria-expanded="false" aria-controls="h2">
+              <canvas data-letter="ТМ" width="128" height="128" aria-hidden="true"></canvas>
+              <span class="heroine-name">Татьяна Мариненко</span>
+              <span class="heroine-role">1920–1942, Полоцкий район</span>
+              <span class="heroine-toggle" aria-hidden="true"></span>
+            </button>
+            <div class="heroine-body" id="h2"><div class="heroine-body-inner">
+              <span></span>
+              <p>Сельская учительница, которая стала разведчицей партизанского отряда «Неуловимые». Собирала сведения о гарнизонах врага, однажды, будучи раненой, всё равно доставила донесение командованию. Была схвачена и казнена. Ей было двадцать два года.</p>
+              <p class="heroine-fact">Герой Советского Союза посмертно, 1965 год.</p>
+            </div></div>
+          </li>
+          <li class="heroine">
+            <button class="heroine-btn" aria-expanded="false" aria-controls="h3">
+              <canvas data-letter="ЗП" width="128" height="128" aria-hidden="true"></canvas>
+              <span class="heroine-name">Зинаида Портнова</span>
+              <span class="heroine-role">1926–1944, Оболь и Полоцк</span>
+              <span class="heroine-toggle" aria-hidden="true"></span>
+            </button>
+            <div class="heroine-body" id="h3"><div class="heroine-body-inner">
+              <span></span>
+              <p>Приехала к бабушке в Беларусь на летние каникулы 1941 года — и оказалась в оккупации. Вступила в подпольную организацию «Юные мстители», затем стала партизанской разведчицей. Схваченная на задании, не выдала товарищей. Погибла в Полоцке в январе 1944 года, ей было семнадцать.</p>
+              <p class="heroine-fact">Герой Советского Союза посмертно, 1958 год.</p>
+            </div></div>
+          </li>
+          <li class="heroine">
+            <button class="heroine-btn" aria-expanded="false" aria-controls="h4">
+              <canvas data-letter="ЕЗ" width="128" height="128" aria-hidden="true"></canvas>
+              <span class="heroine-name">Ефросинья Зенькова</span>
+              <span class="heroine-role">1923–1984, Оболь</span>
+              <span class="heroine-toggle" aria-hidden="true"></span>
+            </button>
+            <div class="heroine-body" id="h4"><div class="heroine-body-inner">
+              <span></span>
+              <p>В восемнадцать лет возглавила «Юных мстителей» — подпольщиков, которые выводили из строя технику, жгли склады и передавали партизанам разведданные. Когда организацию раскрыли, ушла в партизанский отряд и воевала до освобождения Беларуси.</p>
+              <p class="heroine-fact">Герой Советского Союза, 1958 год. Одна из немногих участниц «Юных мстителей», доживших до Победы.</p>
+            </div></div>
+          </li>
+          <li class="heroine">
+            <button class="heroine-btn" aria-expanded="false" aria-controls="h5">
+              <canvas data-letter="МОТ" width="128" height="128" aria-hidden="true"></canvas>
+              <span class="heroine-name">Елена Мазаник, Мария Осипова, Надежда Троян</span>
+              <span class="heroine-role">Минское подполье, 1943</span>
+              <span class="heroine-toggle" aria-hidden="true"></span>
+            </button>
+            <div class="heroine-body" id="h5"><div class="heroine-body-inner">
+              <span></span>
+              <p>Елена Мазаник работала горничной в доме гауляйтера Вильгельма Кубе. Мина, которую передали через подпольщицу Марию Осипову и партизанскую разведчицу Надежду Троян, сработала в ночь на 22 сентября 1943 года. Наместник Гитлера в Беларуси был уничтожен руками трёх женщин.</p>
+              <p class="heroine-fact">Все три стали Героями Советского Союза уже в октябре 1943 года.</p>
+            </div></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 7. Год белорусской женщины -->
+    <section class="section year" id="god" aria-labelledby="god-title">
+      <div class="wrap">
+        <div class="year-head">
+          <div>
+            <p class="kicker" data-knot><svg class="knot" viewBox="0 0 12 12"><path d="M1 1l10 10M11 1L1 11" stroke="#a8142a" stroke-width="2.4"/></svg>2026 — Год белорусской женщины</p>
+            <h2 id="god-title" class="reveal">Ад кужалю да космасу</h2>
+            <p class="lead reveal" style="margin-top:24px">От льняной кудели до космической орбиты. Указом № 1 от 1 января 2026 года этот год объявлен в Беларуси Годом белорусской женщины — чтобы рассказать о той, кто сохраняет и развивает страну.</p>
+          </div>
+          <canvas class="year-badge" data-motif="bereginya" data-color="#36603a" data-big width="400" height="400" aria-hidden="true"></canvas>
+        </div>
+
+        <ol class="lineage">
+          <li class="ln reveal">
+            <span class="ln-when">XII век</span>
+            <div class="ln-what">
+              <h3>Евфросиния Полоцкая</h3>
+              <p>Княжна, которая выбрала книги вместо трона. Переписывала летописи, основала монастыри и школы. По её заказу мастер Лазарь Богша в 1161 году создал крест — одну из главных святынь Беларуси.</p>
+            </div>
+          </li>
+          <li class="ln reveal">
+            <span class="ln-when">1876–1916</span>
+            <div class="ln-what">
+              <h3>Алоиза Пашкевич — Цётка</h3>
+              <p>Поэтесса и учительница. В 1906 году выпустила «Беларускі лемантар» — букварь, по которому дети учились читать на родном языке.</p>
+            </div>
+          </li>
+          <li class="ln reveal">
+            <span class="ln-when">1941–1945</span>
+            <div class="ln-what">
+              <h3>Партизанки и подпольщицы</h3>
+              <p>Разведчицы, связные, медсёстры, подрывницы. Без их мужества партизанская Беларусь не смогла бы бороться почти три года.</p>
+            </div>
+          </li>
+          <li class="ln reveal">
+            <span class="ln-when">1945–1960-е</span>
+            <div class="ln-what">
+              <h3>Те, кто отстроил страну</h3>
+              <p>Женщины разбирали руины Минска, пахали, сеяли, вставали к станкам. Фабрики, школы и больницы, которые стоят до сих пор, построены их руками.</p>
+            </div>
+          </li>
+          <li class="ln reveal">
+            <span class="ln-when">2024</span>
+            <div class="ln-what">
+              <h3>Марина Василевская</h3>
+              <p>Первая женщина-космонавт суверенной Беларуси. 23 марта 2024 года стартовала на корабле «Союз МС-25» к Международной космической станции. Герой Беларуси.</p>
+            </div>
+          </li>
+          <li class="ln ln--you reveal">
+            <span class="ln-when">2026</span>
+            <div class="ln-what">
+              <h3>Твоя мама, бабушка, сестра — и ты</h3>
+              <p>Учителя, врачи, инженеры, аграрии, спортсменки, мамы. История продолжается в каждой из них. Узнайте её — пока есть кому рассказать.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 8. Вопросы бабушке -->
+    <section class="section" id="sprosi" aria-labelledby="ask-title">
+      <div class="wrap ask-grid">
+        <div>
+          <p class="kicker" data-knot><svg class="knot" viewBox="0 0 12 12"><path d="M1 1l10 10M11 1L1 11" stroke="#a8142a" stroke-width="2.4"/></svg>Связь поколений</p>
+          <h2 id="ask-title" class="reveal">Спросите, пока можно спросить</h2>
+          <p class="lead reveal" style="margin-top:24px">Самый важный архив хранится не в музее, а в памяти ваших родных. Вот с чего можно начать разговор.</p>
+        </div>
+        <div>
+          <div class="deck" id="deck" aria-live="polite"></div>
+          <div class="deck-controls">
+            <button class="btn btn--red" id="deckNext">Следующий вопрос</button>
+            <button class="btn" id="deckCopy">Скопировать вопрос</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Вышивка -->
+    <section class="section" id="vyshyvka" aria-labelledby="stitch-title" style="padding-top:0">
+      <div class="wrap">
+        <p class="kicker" data-knot><svg class="knot" viewBox="0 0 12 12"><path d="M1 1l10 10M11 1L1 11" stroke="#a8142a" stroke-width="2.4"/></svg>Вышивка</p>
+        <h2 id="stitch-title" class="reveal">Вышейте свой знак памяти</h2>
+        <p class="lead reveal" style="margin-top:24px">Каждый белорусский узор что-то значит. Выберите знак или вышивайте сами: проведите по канве мышью или пальцем. Зеркальный режим сам сделает узор симметричным, как у настоящих мастериц.</p>
+
+        <div class="studio-grid">
+          <div class="hoop">
+            <canvas id="studio" aria-label="Канва для вышивки 25 на 25 клеток" role="img"></canvas>
+          </div>
+          <div class="tools">
+            <fieldset class="tool-group">
+              <legend>Знак</legend>
+              <div class="tool-row" id="motifs">
+                <button class="btn motif-btn" data-motif="bereginya" aria-pressed="false"><canvas data-motif="bereginya" data-color="#a8142a" width="56" height="56" aria-hidden="true"></canvas>Берегиня</button>
+                <button class="btn motif-btn" data-motif="tree" aria-pressed="false"><canvas data-motif="tree" data-color="#a8142a" width="56" height="56" aria-hidden="true"></canvas>Древо рода</button>
+                <button class="btn motif-btn" data-motif="ruzha" aria-pressed="false"><canvas data-motif="ruzha" data-color="#a8142a" width="56" height="56" aria-hidden="true"></canvas>Ружа</button>
+              </div>
+              <p class="motif-meaning" id="motifMeaning">Выберите знак, чтобы увидеть его значение.</p>
+            </fieldset>
+            <fieldset class="tool-group">
+              <legend>Нитка</legend>
+              <div class="tool-row" id="colors">
+                <button class="swatch" style="background-color:#a8142a" data-color="#a8142a" aria-pressed="true" aria-label="Красная"></button>
+                <button class="swatch" style="background-color:#22262b" data-color="#22262b" aria-pressed="false" aria-label="Чёрная"></button>
+                <button class="swatch" style="background-color:#36603a" data-color="#36603a" aria-pressed="false" aria-label="Зелёная"></button>
+                <button class="swatch" style="background-color:#f1efe8;box-shadow:inset 0 0 0 1px #cfcbbd" data-color="erase" aria-pressed="false" aria-label="Распороть (ластик)"></button>
+              </div>
+            </fieldset>
+            <fieldset class="tool-group">
+              <legend>Режим</legend>
+              <div class="tool-row">
+                <button class="btn" id="mirrorBtn" aria-pressed="true">Зеркально</button>
+                <button class="btn" id="clearBtn">Очистить</button>
+                <button class="btn btn--red" id="saveBtn">Сохранить картинку</button>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Стена памяти -->
+    <section class="section year" id="stena" aria-labelledby="wall-title">
+      <div class="wrap">
+        <p class="kicker" data-knot><svg class="knot" viewBox="0 0 12 12"><path d="M1 1l10 10M11 1L1 11" stroke="#a8142a" stroke-width="2.4"/></svg>Стена памяти</p>
+        <h2 id="wall-title" class="reveal">Добавьте имя своего героя</h2>
+        <p class="lead reveal" style="margin-top:24px">Прадед, который дошёл до Берлина. Прабабушка, которая кормила партизан. Впишите имя — и оно останется на этой стене.</p>
+        <form class="wall-form" id="wallForm" novalidate>
+          <label class="field">Имя и фамилия
+            <input name="name" id="wallName" maxlength="60" autocomplete="off" placeholder="Например, Анна Ковалёва">
+          </label>
+          <label class="field">Кем приходится и чем запомнился(-ась)
+            <input name="note" id="wallNote" maxlength="80" autocomplete="off" placeholder="Прабабушка, партизанская связная">
+          </label>
+          <button class="btn btn--red" type="submit">Вышить имя</button>
+        </form>
+        <p class="form-note" id="wallNoteMsg" aria-live="polite"></p>
+        <ul class="wall" id="wall"></ul>
+      </div>
+    </section>
+
+    <!-- 11. Финал -->
+    <section class="section finale" id="finale" aria-labelledby="fin-title">
+      <h2 id="fin-title">Памятаем.</h2>
+      <p class="lead">Мы помним. Пока помним мы, нить не оборвётся.</p>
+      <canvas class="rushnik" id="rushnik" aria-hidden="true" data-knot="0.5"></canvas>
+
+      <footer class="sources">
+        <div>
+          <h3>О проекте</h3>
+          <p>Конкурсная работа в номинации «Связь поколений: мы помним».</p>
+          <p>Автор: Левчук Мирослав, средняя школа п. Мухавец, 2026.</p>
+          <p>Сайт сделан на HTML, CSS и JavaScript. Вышивка рисуется программно на canvas, анимации — GSAP и Lenis.</p>
+        </div>
+        <div>
+          <h3>Источники</h3>
+          <ul>
+            <li>Указ Президента Республики Беларусь № 1 от 1 января 2026 г. «Об объявлении 2026 года Годом белорусской женщины» — pravo.by</li>
+            <li>Мемориальный комплекс «Хатынь» — khatyn.by</li>
+            <li>Белорусский государственный музей истории Великой Отечественной войны — warmuseum.by</li>
+            <li>Материалы о белорусских женщинах-партизанках: Национальный архив Республики Беларусь — archives.gov.by</li>
+            <li>Сведения о полёте М. Василевской («Союз МС-25», 2024) — открытые публикации СМИ</li>
+          </ul>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="vendor/lenis.min.js"></script>
+  <script src="js/stitch.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/interact.js"></script>
+</body>
+</html>
